@@ -1,0 +1,17 @@
+# Raw vector data — large, reproducible by running fetch_vectors.py
+vectors/
+
+# Development working files
+archive/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
