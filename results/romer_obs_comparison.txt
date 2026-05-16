@@ -1,0 +1,79 @@
+==============================================================================
+ROMER OBSERVATIONS vs JPL EPHEMERIS  (source: Cohen 1940, Isis pp.352-353)
+
+All times in Paris local time.
+JPL 'mean' = geometric + light travel + Paris longitude offset (+9m 20s).
+JPL 'apparent' = JPL mean + Equation of Time.
+Cohen times are in Paris apparent solar time (temps vrai), as recorded.
+Residual = Cohen_apparent - JPL_apparent
+  (+ve = observation later than JPL predicts; -ve = earlier than JPL).
+==============================================================================
+
+------------------------------------------------------------------------------
+OBS:  1671-Oct-25 (civil)  — Cohen anchor observation #1
+Note: Astro Oct 24, 18h 15m apparent.  Cohen mean: 17h 59m 15s astro = civil 05:59:15.
+
+  JPL geometric (I):            1671-10-25 05:01:24.03 TDB
+  Earth–Io distance:             5.98264 AU
+  Light travel time:             49.756 min
+  JPL observed (Paris mean):     06:00:29.4
+  Equation of Time:              +15.67 min
+  JPL observed (Paris apparent): 06:16:09.6
+
+  Cohen apparent (Paris):        06:15:00.0
+  Cohen mean     (Paris):        05:59:15.0
+  Residual (apparent):           -00:01:09.6 min  (obs earlier than JPL)
+  Residual (mean):               -00:01:14.4 min
+
+------------------------------------------------------------------------------
+OBS:  1672-Jan-12 (civil)  — Cohen anchor observation #2
+Note: Astro Jan 12, 8h 59m 22s apparent.  Cohen mean: 9h 8m 45s astro = civil 21:08:45.
+
+  JPL geometric (I):            1672-01-12 20:23:05.56 TDB
+  Earth–Io distance:             4.80074 AU
+  Light travel time:             39.927 min
+  JPL observed (Paris mean):     21:12:21.2
+  Equation of Time:              -9.28 min
+  JPL observed (Paris apparent): 21:03:04.1
+
+  Cohen apparent (Paris):        20:59:22.0
+  Cohen mean     (Paris):        21:08:45.0
+  Residual (apparent):           -00:03:42.1 min  (obs earlier than JPL)
+  Residual (mean):               -00:03:36.2 min
+
+------------------------------------------------------------------------------
+OBS:  1676-Nov-09 (civil)  — the famous Rømer eclipse
+Note: Romer predicted civil 17:25:45 apparent (10 min early per his theory). Observatoire Royal observed civil 17:35:45 apparent.
+
+  JPL geometric (E):            1676-11-09 16:29:08.94 TDB
+  Earth–Io distance:             5.52837 AU
+  Light travel time:             45.978 min
+  JPL observed (Paris mean):     17:24:27.6
+  Equation of Time:              +15.65 min
+  JPL observed (Paris apparent): 17:40:06.6
+
+  Cohen apparent (Paris):        17:35:45.0
+  Cohen mean     (Paris):        17:20:06.0
+  Residual (apparent):           -00:04:21.6 min  (obs earlier than JPL)
+  Residual (mean):               -00:04:21.6 min
+
+==============================================================================
+SUMMARY  (all residuals are Cohen_apparent - JPL_apparent)
+==============================================================================
+  Date (civil)                  Type   JPL apparent  Cohen apparent    Residual
+  --------------------------------------------------------------------------
+  1671-Oct-25                   I        06:16:09.6      06:15:00.0     -1.16 min
+  1672-Jan-12                   I        21:03:04.1      20:59:22.0     -3.70 min
+  1676-Nov-09                   E        17:40:06.6      17:35:45.0     -4.36 min
+
+INTERPRETATION:
+  All three residuals are negative (1–4 min): observations are slightly
+  earlier than JPL predicts in apparent solar time.
+  At 10–15 sec/day drift with weekly calibrations, Huygens pendulum clocks
+  accumulate at most ~2 min error — so a 1–4 min residual over 5 years is
+  entirely plausible from small systematic errors in the observers' EqT
+  tables, Paris longitude assumptions, or clock calibration.
+
+  This contrasts with the naive mean-solar-time comparison, which shows
+  an 11-minute gap on Nov 9 — an artefact of ignoring the Equation of Time.
+  Once both sides are in apparent solar time, the gap nearly vanishes.
